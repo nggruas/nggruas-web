@@ -1,0 +1,569 @@
+*{ /* esto nos ayuda a achicar la paguina */
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+ /* aqui definimos el tipo de letras que usaremos en el cuerpo (bidy)*/
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+nav{
+    background: #111; /*(barras de navegación )Le da un fondo negro casi puro (un gris oscuro muy elegante)*/
+    color: white; /* (barra de navegacion ) le da un color blanco al titulo MENU*/
+
+    display: flex; /*(barra de navegacion) mueve los botones del manu hacia la derecha para que no esten debajo del titulo munu*/
+    justify-content: space-between; /*(Barra de navegacion ) me envia los botones pegados a la derecha */ 
+    align-items: center; /*(Barra de navegacion) coloca el titulo menu al centro lado izquierdo*/
+
+    padding: 15px 50px;/*(Barra de navegacion) le da un centre a los botones y al titulo dejandolos un poco mas alcentro */
+
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index:1000;
+}
+ 
+nav ul{  /* BOTONES DEL MENU*/
+    list-style:none; /* les quita los puntos que estan ante cada nombre del los botones */ 
+    display:flex; /* Coloca los botones en paralelos */
+    gap:30px; /* Separa los enlaces entre sí */
+}
+
+nav a { /* BOTONES DEL MENU*/
+    text-decoration: none; /*quita las lineas que estan bajo los titulos de los botones */
+    color: white; /* cambia el color de los botones a blanco */ 
+    font-size:20px;
+    font-weight:bold;
+}
+
+/*####################################################################################################*/
+.logo{    font-size:30px;
+    font-weight:bold;
+    color:rgb(250, 249, 249);
+}
+
+.logo img{
+    height: 90px;
+    width: auto;
+    display: block;
+}
+/*###################################################################################################*/
+
+.hero{
+    height:90vh; /* se ocupara el 90% de la pantalla sin importar que estemos ocupando pc o celular */
+    display: flex; /* Activa Flexbox **************************************************** */
+    flex-direction:column; /*coloca los textos en comnmas */
+    justify-content: center; /* estas dos columnas centran el texto tanto de arriba como de los lados */
+    align-items: center; /* estas dos columnas centran el texto tanto de arriba como de los lados */
+    
+    background: 
+    linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    ),
+    url("./imagenes/rescate cajon.png");
+
+    background-size: cover;
+    background-position: center;
+
+
+    color: rgba(248, 245, 245, 0.944);
+    text-align: center; 
+}
+
+.hero img{
+    height:150px;
+     margin-bottom: 30px ;
+     position: relative;
+     top: 50px;  
+    
+}
+
+.hero h1{
+    font-size: 60px;    
+    margin-bottom: 20px ;
+    
+
+}
+
+.hero p{ /* le da espacio al hero p*/
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.boton{ /*boton hero p */
+    background: red; /*le realiza un destacado al boton solicita tu grua */
+    color: white; /*le cambia el color a las letras del boton */
+    text-decoration: none; /*elimina la ralla de abajo de la palabra */
+    
+    padding: 15px  30px; /*agranda el destacado de solicita tu grua */
+    border-radius: 20px; /*reodea los bordes del boton solicita tu grua */
+
+}
+/* ###################################################################################################
+movimiento del menu
+####################################################################################################*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* ###################################################################################################
+
+SERVICIOS 
+
+####################################################################################################*/
+
+.servicios{
+    padding: 80px 50px;
+    background: #f4f4f4 ;/* Fondo gris claro para la sección */
+}
+
+.servicios h2{
+    text-align: center; /*sentra el texto en la pantalla */
+    font-size: 40px; /*agranda el texto */
+    margin-bottom: 50px; /*enpuja cualquier elemento 50 px hacia abajo */
+}
+
+.contenedor-servicios{
+    display: flex; /*activa flexbok*/
+    gap: 30px; /*alinea los elementos */
+    justify-content: center;
+    flex-wrap:wrap;
+}
+
+.tarjeta{
+    background: white;/*crea una destacado de color de fondo completo */
+    width: 280px; /*le da una medida al destacado del background*/
+    min-height: 200px;
+    padding: 30px; /*genera un contraste al destacado del background*/
+    border-radius: 15px; /*reondea las esquinas del destacado del background */
+    box-shadow: 0px 5px 15px rgba(0,0,0,1.00); /*agrega sombra */
+
+    transition:0.3s;
+    border-top: 5px solid #d40000;
+}
+
+.tarjeta:hover{
+    transform: translateY(-20px); /*cuando se pasa el mouse la tarjeta se mueve */
+
+}
+
+.tarjeta h3{
+    margin-top: 15px; /*el ancho de los botones de cada tarjeta*/
+    color: #d40000; /*cambia el color de los titulos de los servicios */
+}
+
+/* ###################################################################################################
+quienes somos 
+####################################################################################################*/
+
+.quienes-somos{
+    padding: 80px 10%;
+    background-color: #111;
+    color: white;
+}
+
+.quienes-contenido{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    gap: 60px;
+}
+
+.quienes-texto{
+    flex: 1;
+}
+
+
+.quienes-texto h2{
+    color: #d40000;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+
+.quienes-texto p{
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.quienes-imagen{
+    flex: 1;
+}
+
+.quienes-imagen img{
+    width:100%;
+    border-radius: 20px;
+    display: block;
+}
+/*#######################################################################################
+porque nosotros 
+#######################################################################################*/
+.porque-nosotros{
+text-align: center;
+background: #181818; /*le puso un negro semi transparentre */
+ 
+}
+.porque-nosotros h2{
+    color: #fff;
+    font-size: 40px;/*agranda el texto*/
+    margin-bottom: 10px;
+    
+}
+
+.porque-nosotros p{
+    color: #bdbdbd;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+.ventajas{
+    display: grid; /*hace que se ocupe el 100% del espacio */
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));/*puso las casillas en diagonal */
+    gap: 30px; /*separa las targetas entre si */
+}
+ 
+.ventaja{
+    background: #222;
+    padding: 35px 25px;
+    border-radius: 15px;
+    transition:.3s;
+}
+
+.ventaja:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(235, 7, 7, 0.868);
+}
+
+.ventaja i{
+    font-size: 50px; /*agranda tamaño de imagen */
+    color: #d40000;
+    margin-bottom: 10px;
+}
+
+.ventaja h3{
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.ventaja p{
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/*#######################################################################################
+GALERIA carrucel
+#######################################################################################*/
+
+
+
+.galeria{
+    padding: 30px 50px;/*ancho de las imagenes*/
+    background: #111; /*color del fondo */
+    color: white;/*color de las letras del titulo*/
+    text-align: center;/*centramos el titulo*/
+}
+
+.galeria h2{
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.galeria p{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.carrusel{
+    position: relative;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.imagenes-carrusel{
+    position: relative;
+    height: 500px;
+}
+
+.imagenes-carrusel img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+    
+    opacity: 0;
+   transition: opacity 1.1s ease-in-out;
+
+    pointer-events: none;
+}
+
+.imagenes-carrusel img.imagen-activa{
+    opacity: 1;
+}
+
+.btn-carrusel{
+    position: absolute;
+    top: 50%;/*pocicion de los botones arriba abajo */
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.6);
+    color:#d40000;
+    border: none;
+    font-size: 30px;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 50%; /*para que los botones sean redondos */
+    z-index: 100;
+    
+    width:60px;
+    height:60px;
+}
+
+.anterior{
+    left: -80px;
+}
+
+.siguiente{
+    right: -80px;
+    
+}
+
+/*#######################################################################################
+GALERIA 
+#######################################################################################*/
+
+.galeria2{
+    padding: 30px 60px;/*ancho de las imagenes*/
+    background: #111; /*color del fondo */
+    color: white;/*color de las letras del titulo*/
+    text-align: center;/*centramos el titulo*/
+}
+
+.galeria2 h2{
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.galeria2 p{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.contenedor-galeria2{
+    display: grid; /*activamos css grid*/
+    grid-template-columns: repeat(4, 1fr);/*lepedimos usar 4 column en 1 fila */
+    gap: 20px;
+    overflow: hidden;
+}
+
+.contenedor-galeria2 img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.contenedor-galeria2 img:hover{
+    transform: scale(1.1);
+}
+
+/*#######################################################################################
+cobertura
+#######################################################################################*/
+.cobertura{
+    padding: 70px 8%;
+    background-color: #111;
+    color: white;
+    text-align: center
+}
+
+.cobertura h2{
+    color: #d40000;
+    font-size: 40px;
+    margin-bottom: 15px;    
+}
+
+.cobertura-descripcion{
+    font-size: 18px;
+    margin-bottom: 45px;
+
+}
+
+.cobertura-grid{
+    max-width: 1200px; 
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+}
+.cobertura card{
+    background-color: white;
+    
+}
+/*#######################################################################################
+Preguntas frecuntes
+#######################################################################################*/
+.pre{
+    padding: 80px 10%;
+    background: #dbd6d6;
+}
+
+.pre h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.pre p{
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(228, 8, 8, 0.08);
+        
+}
+
+.pre-preguntas{
+    width: 100%;
+    border: none;
+    background: #fff;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pre-respuesta{
+    max-height: 0;
+    overflow: hidden;
+    background: #fff;
+    transition: max-heinght .4s ease-out;
+}
+
+
+.pre-respuesta p{
+    padding: 20px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/*#######################################################################################
+BOTON DE WHASSAP
+#######################################################################################*/
+
+.whatsapp{
+    position: fixed;
+
+    bottom: 20px ;
+    right: 25px;
+
+    z-index: 9999;
+
+    transition: transform 0.3s;
+
+}
+
+.whatsapp img{
+    width: 90px;
+    height: 90px;
+}
+
+/*#######################################################################################
+FOOTER
+#######################################################################################*/
+
+.footer{
+    background: #000;
+    color: white;
+}
+
+.footer-contenedor{
+    max-width: 1200px;
+    margin: auto;
+
+
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+
+    padding: 30px 40px;
+}
+
+.footer-columna{
+    flex: 1;
+}
+
+.footer-columna h3{
+    margin-bottom: 20px;
+    color: #d40000;
+}
+
+.footer-columna ul{
+    list-style: none;
+}
+
+.footer-columna li{
+    margin-bottom: 10px;
+}
+
+.footer-columna p {
+    color: inherit;
+    text-decoration: none;
+
+}
+
+.footer-columna p :hover{
+    color: #d40000;
+    
+}
+.CONTACTO p{
+    margin-bottom: 15px;
+}
+
+.redes{
+    margin-top: 9PX ;
+}
+.redes a{
+    font-size:32px;
+    margin-right:15px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.redes .facebook{
+    color:#1877F2;
+}
+
+.redes .instagram{
+    color:#E4405F;
+}
+
+.redes .tiktok{
+    color:#000000;
+}
+
+.redes .x{
+    color:#000000;
+}
+
+.redes a:hover{
+    transform:scale(1.15);
+}
+
