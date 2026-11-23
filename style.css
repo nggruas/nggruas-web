@@ -567,3 +567,399 @@ FOOTER
     transform:scale(1.15);
 }
 
+
+/* ==========================================
+   NGGRÚAS - CORRECCIONES GENERALES
+========================================== */
+
+html {
+    scroll-padding-top: 110px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+section {
+    scroll-margin-top: 110px;
+}
+
+/* COBERTURA */
+
+.cobertura-card {
+    background: #fff;
+    color: #111;
+    border-radius: 14px;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    min-width: 0;
+}
+
+.cobertura-card h3 {
+    font-size: 17px;
+    text-align: left;
+    overflow-wrap: anywhere;
+}
+
+.btn-cotizar {
+    display: inline-block;
+    padding: 11px 15px;
+    background: #d40000;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 8px;
+    white-space: nowrap;
+}
+
+.btn-cotizar:hover {
+    background: #ff0000;
+}
+
+/* CORRECCIÓN DE TRANSICIÓN FAQ */
+
+.pre-respuesta {
+    transition: max-height .4s ease-out;
+}
+
+/* ==========================================
+   TABLETS Y CELULARES
+========================================== */
+
+@media (max-width: 768px) {
+
+    /* NAVEGACIÓN */
+
+    nav {
+        padding: 10px 15px;
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+    }
+
+    .logo img {
+        height: 65px;
+        width: auto;
+        margin: auto;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 16px;
+        width: 100%;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    /* PORTADA */
+
+    .hero {
+        min-height: 100svh;
+        height: auto;
+        padding: 170px 20px 55px;
+        background-position: center;
+    }
+
+    .hero h1 {
+        font-size: clamp(30px, 8vw, 44px);
+        line-height: 1.15;
+        margin-bottom: 20px;
+    }
+
+    .hero p {
+        font-size: 17px;
+        line-height: 1.5;
+        margin-bottom: 25px;
+    }
+
+    .hero img {
+        max-width: 80%;
+        height: auto;
+        top: 0;
+    }
+
+    .boton {
+        display: inline-block;
+        font-size: 15px;
+        padding: 14px 22px;
+    }
+
+    /* SERVICIOS */
+
+    .servicios {
+        padding: 55px 18px;
+    }
+
+    .servicios h2 {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    .contenedor-servicios {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .tarjeta {
+        width: 100%;
+        max-width: 420px;
+        min-height: 0;
+        padding: 25px;
+    }
+
+    .tarjeta:hover {
+        transform: none;
+    }
+
+    /* QUIÉNES SOMOS */
+
+    .quienes-somos {
+        padding: 55px 20px;
+    }
+
+    .quienes-contenido {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .quienes-texto,
+    .quienes-imagen {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .quienes-texto h2 {
+        font-size: 32px;
+    }
+
+    .quienes-texto p {
+        font-size: 16px;
+        line-height: 1.7;
+        text-align: left;
+    }
+
+    .quienes-imagen img {
+        width: 100%;
+        max-width: 450px;
+        margin: auto;
+    }
+
+    /* POR QUÉ ELEGIRNOS */
+
+    .porque-nosotros {
+        padding: 55px 20px;
+    }
+
+    .porque-nosotros h2 {
+        font-size: 32px;
+    }
+
+    .porque-nosotros p {
+        font-size: 17px;
+    }
+
+    .ventajas {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .ventaja {
+        padding: 28px 20px;
+    }
+
+    /* CARRUSEL PRINCIPAL */
+
+    .galeria {
+        padding: 45px 15px;
+    }
+
+    .galeria h2 {
+        font-size: 32px;
+    }
+
+    .galeria p {
+        font-size: 16px;
+    }
+
+    .carrusel {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .imagenes-carrusel {
+        height: 300px;
+    }
+
+    .imagenes-carrusel img {
+        height: 100%;
+        border-radius: 12px;
+    }
+
+    .btn-carrusel {
+        width: 42px;
+        height: 42px;
+        padding: 5px;
+        font-size: 24px;
+    }
+
+    .anterior {
+        left: 5px;
+    }
+
+    .siguiente {
+        right: 5px;
+    }
+
+    /* GALERÍA DE MINIATURAS */
+
+    .galeria2 {
+        padding: 30px 15px;
+    }
+
+    .contenedor-galeria2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .contenedor-galeria2 img {
+        height: 180px;
+        width: 100%;
+    }
+
+    /* COBERTURA */
+
+    .cobertura {
+        padding: 55px 18px;
+    }
+
+    .cobertura h2 {
+        font-size: 32px;
+    }
+
+    .cobertura-descripcion {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+
+    .cobertura-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .cobertura-card {
+        padding: 17px 14px;
+        gap: 12px;
+    }
+
+    .cobertura-card h3 {
+        font-size: 15px;
+    }
+
+    .btn-cotizar {
+        font-size: 12px;
+        padding: 10px 12px;
+    }
+
+    /* PREGUNTAS FRECUENTES */
+
+    .pre {
+        padding: 55px 18px;
+    }
+
+    .pre h2 {
+        font-size: 32px;
+    }
+
+    .pre-preguntas {
+        font-size: 16px;
+        gap: 15px;
+    }
+
+    /* WHATSAPP */
+
+    .whatsapp {
+        right: 15px;
+        bottom: 18px;
+    }
+
+    .whatsapp img {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* FOOTER */
+
+    .footer-contenedor {
+        flex-direction: column;
+        gap: 30px;
+        padding: 40px 22px;
+    }
+
+    .footer-columna {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .footer-columna h3 {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .footer-columna p,
+    .footer-columna a,
+    .footer-columna li {
+        overflow-wrap: anywhere;
+    }
+
+    .redes {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .redes a {
+        margin-right: 0;
+    }
+}
+
+/* ==========================================
+   CELULARES PEQUEÑOS
+========================================== */
+
+@media (max-width: 380px) {
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .cobertura-card {
+        flex-wrap: wrap;
+    }
+
+    .cobertura-card h3 {
+        flex: 1 1 140px;
+    }
+
+    .imagenes-carrusel {
+        height: 250px;
+    }
+}
+
