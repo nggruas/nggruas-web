@@ -10,24 +10,46 @@
 
 <body>
 
-   
 
-    <nav>
-        <div class="logo">
-            <img src="./imagenes/logo.png" alt="NGgruas">
-            
-        </div>
+<nav>
 
-        <ul>
-            <li><a href="#INICIO">INICIO</a></li>
-            <li><a href="#SERVICIOS">SERVICIOS </a></li>
-            <li><a href="#COBERTURA">COBERTURA</a></li>
-            <li><a href="#galeria">GALERIA</a></li>
-            <li><a href="#preguntas">PREGUNTAS FRECUENTES</a></li>
-            <li><a href="#CONTACTO">CONTACTO</a></li>
-        </ul>
-        
-    </nav>
+    <div class="logo">
+
+        <!-- Grúa lado izquierdo -->
+        <img src="./imagenes/grua-levante.png"
+             class="icono-grua grua-izquierda"
+             alt="Grúa de levante">
+
+        <!-- Logo central -->
+        <img src="./imagenes/logo.png"
+             class="logo-principal"
+             alt="NGgruas">
+
+        <!-- Grúa lado derecho -->
+        <img src="./imagenes/grua-cama.png"
+             class="icono-grua grua-derecha"
+             alt="Grúa plataforma">
+
+    </div>
+
+    <button class="menu-hamburguesa"
+            aria-label="Abrir menú"
+            aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <ul>
+        <li><a href="#INICIO">INICIO</a></li>
+        <li><a href="#SERVICIOS">SERVICIOS</a></li>
+        <li><a href="#cobertura">COBERTURA</a></li>
+        <li><a href="#galeria">GALERIA</a></li>
+        <li><a href="#preguntas">PREGUNTAS FRECUENTES</a></li>
+        <li><a href="#CONTACTO">CONTACTO</a></li>
+    </ul>
+
+</nav>
 
     <section class="hero" id="INICIO">
 
@@ -36,14 +58,21 @@
         <h1>Servicio de grúas 24 horas </h1>
         <h1>RM</h1>
 
-        <p>Servicio de grúa cama para vehiculos 
+        <p>Servicio de grúa cama para vehiculos
             <br> Rescates y traslados en toda la Región Metropolitana.
             <br>
             +56 9 7159 2125
         </p>
 
-        <a class="boton" href="#">SOLICITA TU GRÚA</a>   
+        <a class="boton abrir-contacto" href="#">
+            SOLICITA TU GRÚA
+        </a>
     </section>
+
+<!--*************************************************************************************************
+Servicios
+************************************************************************************************-->
+    
 
     <section class="servicios"id="SERVICIOS">
 
@@ -104,7 +133,7 @@
             
         </div>
 
-    </section> 
+    </section>
 
     <section class="quienes-somos" id="quienes">
         <div class="quienes-contenido">
@@ -130,6 +159,10 @@
 
         </div>
     </section>
+
+<!--*************************************************************************************************
+por que nosotros
+************************************************************************************************-->
     
     <section class="porque-nosotros" id="porque-nosotros">
         <h2>¿Por qué elegir NGgrúas? </h2>
@@ -162,7 +195,9 @@
             </div>
 
         </div>
-
+<!--*************************************************************************************************
+Galeria
+************************************************************************************************-->
         
     </section>
 
@@ -189,7 +224,7 @@
 
         </div>
 
-    </section> 
+    </section>
     
     <section class="galeria2" id="GALERIA">
         
@@ -204,122 +239,104 @@
 
     </section>
     
+    
     <section class="cobertura" id="cobertura">
+
         <h2>Cobertura</h2>
+
         <p class="cobertura-descripcion">
-            Contamos con servicio de grúas y asistencia para vehículos en distintas comunas de la Región Metropolitana.
+            Contamos con servicio de grúas y asistencia para vehículos
+            en toda la Región Metropolitana.
         </p>
 
-        <div class="cobertura-grid">
-            <div class="cobertura-card"></div>
-            <h3>Grúas en santiago centro</h3>
-            <a href="#contacto" class="btn-cotizar">COTIZAR</a>
-        </div>
+<!--*************************************************************************************************
+Covertura
+************************************************************************************************-->
 
         <div class="cobertura-grid">
-            <div class="cobertura-card"></div>
-            <h3>Grúas en la Florida</h3>
-            <a href="#contacto" class="btn-cotizar">COTIZAR</a>
+
+            <div class="cobertura-card">
+                <h3>Grúas en San Bernardo</h3>
+                <a href="#CONTACTO" class="btn-cotizar">COTIZAR</a>
+            </div>
+
+            <div class="cobertura-card">
+                <h3>Grúas en Santiago Centro</h3>
+                <a href="#CONTACTO" class="btn-cotizar">COTIZAR</a>
+            </div>
+
+            <div class="cobertura-card">
+                <h3>Grúas en La Florida</h3>
+                <a href="#CONTACTO" class="btn-cotizar">COTIZAR</a>
+            </div>
+
+            <div class="cobertura-card">
+                <h3>Grúas en Puente Alto</h3>
+                <a href="#CONTACTO" class="btn-cotizar">COTIZAR</a>
+            </div>
+
+            <div class="cobertura-card">
+                <h3>Grúas en San José de Maipo</h3>
+                <a href="#CONTACTO" class="btn-cotizar">COTIZAR</a>
+            </div>
+
+            <div class="cobertura-card">
+                <h3>Grúas en Pirque</h3>
+                <a href="#CONTACTO" class="btn-cotizar">COTIZAR</a>
+            </div>
+
+            <div class="cobertura-card">
+                <h3>Grúas en Macul</h3>
+                <a href="#CONTACTO" class="btn-cotizar">COTIZAR</a>
+            </div>
+
+            <div class="cobertura-card">
+                <h3>Grúas en Peñalolén</h3>
+                <a href="#CONTACTO" class="btn-cotizar">COTIZAR</a>
+            </div>
+
+            <div class="cobertura-card">
+                <h3>Grúas en La Reina</h3>
+                <a href="#CONTACTO" class="btn-cotizar">COTIZAR</a>
+            </div>
+
+            <div class="cobertura-card">
+                <h3>Grúas en La Cisterna</h3>
+                <a href="#CONTACTO" class="btn-cotizar">COTIZAR</a>
+            </div>
+
+            <div class="cobertura-card">
+                <h3>Grúas en Buin</h3>
+                <a href="#CONTACTO" class="btn-cotizar">COTIZAR</a>
+            </div>
+
+            <div class="cobertura-card">
+                <h3>Grúas en Padre Hurtado</h3>
+                <a href="#CONTACTO" class="btn-cotizar">COTIZAR</a>
+            </div>
+
+            <div class="cobertura-card">
+                <h3>Grúas en El Bosque</h3>
+                <a href="#CONTACTO" class="btn-cotizar">COTIZAR</a>
+            </div>
+
+            <div class="cobertura-card">
+                <h3>Grúas en La Pintana</h3>
+                <a href="#CONTACTO" class="btn-cotizar">COTIZAR</a>
+            </div>
+
+            <div class="cobertura-card">
+                <h3>Grúas en Maipú</h3>
+                <a href="#CONTACTO" class="btn-cotizar">COTIZAR</a>
+            </div>
+
         </div>
 
-        <div class="cobertura-grid">
-            <div class="cobertura-card"></div>
-            <h3>Grúas en Puente Alto</h3>
-            <a href="#contacto" class="btn-cotizar">COTIZAR</a>
-        </div>
-
-        <div class="cobertura-grid">
-            <div class="cobertura-card"></div>
-            <h3>Grúas en San José de Maipo</h3>
-            <a href="#contacto" class="btn-cotizar">COTIZAR</a>
-        </div>
-
-        <div class="cobertura-grid">
-            <div class="cobertura-card"></div>
-            <h3>Grúas en Pirque </h3>
-            <a href="#contacto" class="btn-cotizar">COTIZAR</a>
-        </div>
-
-        <div class="cobertura-grid">
-            <div class="cobertura-card"></div>
-            <h3>Grúas en Macul</h3>
-            <a href="#contacto" class="btn-cotizar">COTIZAR</a>
-        </div>
-
-        <div class="cobertura-grid">
-            <div class="cobertura-card"></div>
-            <h3>Grúas en Peñalolen </h3>
-            <a href="#contacto" class="btn-cotizar">COTIZAR</a>
-        </div>
-
-        <div class="cobertura-grid">
-            <div class="cobertura-card"></div>
-            <h3>Grúas en la Reina</h3>
-            <a href="#contacto" class="btn-cotizar">COTIZAR</a>
-        </div>
-
-        <div class="cobertura-grid">
-            <div class="cobertura-card"></div>
-            <h3>Grúas en la Cisterna</h3>
-            <a href="#contacto" class="btn-cotizar">COTIZAR</a>
-        </div>
-
-        <div class="cobertura-grid">
-            <div class="cobertura-card"></div>
-            <h3>Grúas en Buin</h3>
-            <a href="#contacto" class="btn-cotizar">COTIZAR</a>
-        </div>
-
-        <div class="cobertura-grid">
-            <div class="cobertura-card"></div>
-            <h3>Grúas en Padre Hurtado</h3>
-            <a href="#contacto" class="btn-cotizar">COTIZAR</a>
-        </div>
-
-        <div class="cobertura-grid">
-            <div class="cobertura-card"></div>
-            <h3>Grúas en el Bosque </h3>
-            <a href="#contacto" class="btn-cotizar">COTIZAR</a>
-        </div>
-
-        <div class="cobertura-grid">
-            <div class="cobertura-card"></div>
-            <h3>Grúas en la Pintana</h3>
-            <a href="#contacto" class="btn-cotizar">COTIZAR</a>
-        </div>
-
-        <div class="cobertura-grid">
-            <div class="cobertura-card"></div>
-            <h3>Grúas en santiago centro</h3>
-            <a href="#contacto" class="btn-cotizar">COTIZAR</a>
-        </div>
-
-        <div class="cobertura-grid">
-            <div class="cobertura-card"></div>
-            <h3>Grúas en santiago centro</h3>
-            <a href="#contacto" class="btn-cotizar">COTIZAR</a>
-        </div>
-
-        <div class="cobertura-grid">
-            <div class="cobertura-card"></div>
-            <h3>Grúas en santiago centro</h3>
-            <a href="#contacto" class="btn-cotizar">COTIZAR</a>
-        </div>
-
-        <div class="cobertura-grid">
-            <div class="cobertura-card"></div>
-            <h3>Grúas en santiago centro</h3>
-            <a href="#contacto" class="btn-cotizar">COTIZAR</a>
-        </div>
-
-        <div class="cobertura-grid">
-            <div class="cobertura-card"></div>
-            <h3>Grúas en santiago centro</h3>
-            <a href="#contacto" class="btn-cotizar">COTIZAR</a>
-        </div>
     </section>
 
-      
+<!--*************************************************************************************************
+Preguntas frecuentes
+************************************************************************************************-->
 
     <section class="pre" id="preguntas">
 
@@ -357,7 +374,7 @@
             <div class="pre-respuesta">
                 <p>Si. Realizamos el traslado de vehiculos siniestrados, bloqueados y tambien rescate desde estacionamientos subterraneos.</p>
             </div>
-        </div>  
+        </div> 
 
         <div class="faq-item">
             <button class="pre-preguntas">
@@ -375,16 +392,18 @@
 
     
 
-
+<!--*************************************************************************************************
+whatsapp
+************************************************************************************************-->
 
     <section class="whatsapp">
-         
+
         <a href="https://wa.me/56971592125?text=Hola,%20necesito%20una%20cotización%20para%20traslado%20de%20vehículo" class="whatsapp" target="_blank">
             <img src="./imagenes/whapapp.png" alt="WhatsApp">
         </a>
     </section>
 
-   
+
 
 
 
@@ -466,7 +485,49 @@
                 
 
     </footer>
-  
+
+  <!-- Ventana emergente de contacto -->
+
+<div class="modal-contacto" id="modalContacto">
+
+    <div class="modal-contenido">
+
+        <button class="modal-cerrar" id="cerrarModal"
+                aria-label="Cerrar ventana">
+            &times;
+        </button>
+
+        <h2>¿Necesitas una grúa?</h2>
+
+        <p>Selecciona tu método de contacto.</p>
+
+        <!-- Botón llamada -->
+        <a href="tel:+56971592125" class="modal-llamar">
+            <i class="fas fa-phone"></i>
+            Llamar ahora
+        </a>
+
+        <!-- Botón WhatsApp -->
+        <a href="https://wa.me/56971592125"
+           class="modal-whatsapp"
+           id="whatsappCotizacion"
+           target="_blank"
+           rel="noopener noreferrer">
+
+            <i class="fab fa-whatsapp"></i>
+            Cotizar por WhatsApp
+
+        </a>
+
+        <h3>+56 9 7159 2125</h3>
+
+        <p class="modal-horario">
+            Asistencia las 24 horas · 7 días a la semana
+        </p>
+
+    </div>
+
+</div>
 <script src="script.js"></script>
 </body>
 </html>

@@ -572,9 +572,7 @@ FOOTER
    NGGRÚAS - CORRECCIONES GENERALES
 ========================================== */
 
-html {
-    scroll-padding-top: 110px;
-}
+
 
 body {
     overflow-x: hidden;
@@ -584,9 +582,6 @@ img {
     max-width: 100%;
 }
 
-section {
-    scroll-margin-top: 110px;
-}
 
 /* COBERTURA */
 
@@ -963,3 +958,232 @@ section {
     }
 }
 
+/* ==========================================
+   LOGO E ICONOS DE GRÚAS
+========================================== */
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Ocultar las grúas en computadores */
+
+.logo .icono-grua {
+    display: none;
+}
+
+/* LOGO E ICONOS DE GRÚAS */
+
+nav .logo {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+/* Ocultar iconos en computadores */
+
+nav .logo img.icono-grua {
+    display: none !important;
+}
+
+/* Versión para celulares */
+
+@media (max-width: 768px) {
+
+    nav .logo {
+        width: 100%;
+        gap: 12px;
+    }
+
+    nav .logo img.logo-principal {
+        width: 120px !important;
+        height: auto !important;
+        margin: 0;
+    }
+
+    nav .logo img.icono-grua {
+        display: block !important;
+        width: 90px !important;
+        height: auto !important;
+        object-fit: contain;
+        margin: 0;
+    }
+}
+
+/* MENÚ HAMBURGUESA */
+
+.menu-hamburguesa {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .menu-hamburguesa {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        background: transparent;
+        border: none;
+        padding: 8px;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+
+    .menu-hamburguesa span {
+        width: 20px;
+        height: 2px;
+        background-color: white;
+        border-radius: 2px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ul.activo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+        padding: 15px 0;
+    }
+}
+/* ==========================================
+   VENTANA EMERGENTE DE CONTACTO
+========================================== */
+
+.modal-contacto {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 10000;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Mostrar ventana */
+
+.modal-contacto.activo {
+    display: flex;
+}
+
+/* Diseño de la ventana */
+
+.modal-contenido {
+    position: relative;
+    background: #252525;
+    color: white;
+    width: 100%;
+    max-width: 400px;
+    padding: 40px 25px 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Botón cerrar */
+
+.modal-cerrar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Títulos y descripción */
+
+.modal-contenido h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.modal-contenido p {
+    color: #ccc;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+/* Botones de contacto */
+
+.modal-llamar,
+.modal-whatsapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+/* Botón llamada */
+
+.modal-llamar {
+    background: #d40000;
+}
+
+.modal-llamar:hover {
+    background: #ff0000;
+}
+
+/* Botón WhatsApp */
+
+.modal-whatsapp {
+    background: #168c46;
+}
+
+.modal-whatsapp:hover {
+    background: #25D366;
+}
+
+/* Número de contacto */
+
+.modal-contenido h3 {
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+
+/* Horario de atención */
+
+.modal-contenido .modal-horario {
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+/* Adaptación para celulares */
+
+@media (max-width: 768px) {
+
+    .modal-contenido {
+        max-width: 340px;
+        padding: 35px 20px 25px;
+    }
+
+    .modal-contenido h2 {
+        font-size: 24px;
+    }
+
+    .modal-llamar,
+    .modal-whatsapp {
+        font-size: 15px;
+    }
+}
